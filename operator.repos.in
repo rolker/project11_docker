@@ -1,0 +1,23 @@
+repositories:
+  camp:
+    type: git
+    url: ${git_repo}/camp.git
+    version: ${ros_version}
+  joy_to_helm:
+    type: git
+    url: ${git_repo}/joy_to_helm.git
+    version: ${ros_version}
+  rqt_marine_radar:
+    type: git
+    url: ${git_repo}/rqt_marine_radar.git
+    version: ${ros_version}
+  rqt_marine_sonar:
+    type: git
+    url: ${git_repo}/rqt_marine_sonar.git
+    version: ${ros_version}
+  rqt_udp_bridge:
+    type: git
+    url: ${git_repo}/rqt_udp_bridge.git
+    version: ${ros_version}
+    
+    

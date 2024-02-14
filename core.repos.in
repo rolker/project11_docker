@@ -1,0 +1,41 @@
+repositories:
+  command_bridge:
+    type: git
+    url: ${git_repo}/command_bridge
+    version: ${ros_version}
+  geographic_visualization_msgs:
+    type: git
+    url: ${git_repo}/geographic_visualization_msgs.git
+    version: ${ros_version}
+  marine_ais:
+    type: git
+    url: ${git_repo}/marine_ais.git
+    version: ${ros_version}
+  marine_msgs:
+    type: git
+    url: ${git_repo}/marine_msgs.git
+    version: main
+  marine_radar_control_msgs:
+    type: git
+    url: ${git_repo}/marine_radar_control_msgs.git
+    version: ${ros_version}
+  project11:
+    type: git
+    url: ${git_repo}/project11.git
+    version: ${ros_version}
+  project11_msgs:
+    type: git
+    url: ${git_repo}/project11_msgs.git
+    version: ${ros_version}
+  project11_nav_msgs:
+    type: git
+    url: ${git_repo}/project11_nav_msgs.git
+    version: ${ros_version}
+  sonardyne_msgs:
+    type: git
+    url: ${git_repo}/sonardyne_msgs.git
+    version: ${ros_version}
+  udp_bridge:
+    type: git
+    url: ${git_repo}/udp_bridge.git
+    version: ${ros_version}

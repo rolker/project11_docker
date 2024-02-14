@@ -1,0 +1,13 @@
+repositories:
+  asv_helm:
+    type: git
+    url: ${git_repo}/asv_helm.git
+    version: ${ros_version}
+  asv_sim:
+    type: git
+    url: ${git_repo}/asv_sim.git
+    version: ${ros_version}
+  project11_simulation:
+    type: git
+    url: ${git_repo}/project11_simulation.git
+    version: ${ros_version}

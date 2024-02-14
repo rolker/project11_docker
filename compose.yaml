@@ -1,0 +1,61 @@
+services:
+  project11-core:
+    image: project11-core
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: project11-core
+      args:
+        GIT_REPO: https://github.com/rolker
+
+    # Interactive shell
+    stdin_open: true
+    tty: true
+    # Networking and IPC for ROS 2
+    network_mode: host
+    ipc: host
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority
+    
+  project11-robot:
+    extends: project11-core
+    image: project11-robot
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: project11-robot
+    command: /bin/bash
+
+  project11-operator:
+    extends: project11-core
+    image: project11-operator
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: project11-operator
+    command: /bin/bash
+
+  project11-simulation:
+    extends: project11-robot
+    image: project11-simulation
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: project11-simulation
+    command: /bin/bash
+
+  project11-operator-dev:
+    extends: project11-operator
+    image: project11-operator-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: project11-operator-dev
+    command: /bin/bash
+    privileged: true
+    volumes:
+      - ~/.Xauthority:/home/devuser/.Xauthority
+

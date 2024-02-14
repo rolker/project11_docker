@@ -1,0 +1,65 @@
+repositories:
+  ben_description:
+    type: git
+    url: ${git_repo}/ben_description.git
+    version: ${ros_version}
+  ben_project11:
+    type: git
+    url: ${git_repo}/ben_project11.git
+    version: ${ros_version}
+  ccom_planner:
+    type: git
+    url: ${git_repo}/ccom_planner.git
+    version: ${ros_version}
+  dubins_curves:
+    type: git
+    url: ${git_repo}/dubins_curves.git
+    version: ${ros_version}
+  echo_helm:
+    type: git
+    url: ${git_repo}/echo_helm.git
+    version: ${ros_version}
+  echoboat_project11:
+    type: git
+    url: ${git_repo}/echoboat_project11.git
+    version: ${ros_version}
+  halo_radar:
+    type: git
+    url: ${git_repo}/halo_radar.git
+    version: ${ros_version}
+  helm_manager:
+    type: git
+    url: ${git_repo}/helm_manager.git
+    version: ${ros_version}
+  mission_manager:
+    type: git
+    url: ${git_repo}/mission_manager.git
+    version: ${ros_version}
+  mru_transform:
+    type: git
+    url: ${git_repo}/mru_transform.git
+    version: ${ros_version}
+  posmv:
+    type: git
+    url: ${git_repo}/posmv.git
+    version: ${ros_version}
+  project11_navigation:
+    type: git
+    url: ${git_repo}/project11_navigation.git
+    version: ${ros_version}
+  s57_tools:
+    type: git
+    url: ${git_repo}/s57_tools.git
+    version: ${ros_version}
+  seapath:
+    type: git
+    url: ${git_repo}/seapath.git
+    version: ${ros_version}
+  simrad_ek80:
+    type: git
+    url: ${git_repo}/simrad_ek80.git
+    version: ${ros_version}
+  sonardyne_usbl:
+    type: git
+    url: ${git_repo}/sonardyne_usbl.git
+    version: ${ros_version}
