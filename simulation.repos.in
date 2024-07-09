@@ -7,6 +7,10 @@ repositories:
     type: git
     url: ${git_repo}/asv_sim.git
     version: ${ros_version}
+  mbes_sim:
+    type: git
+    url: ${git_repo}/mbes_sim.git
+    version: ${ros_version}
   project11_simulation:
     type: git
     url: ${git_repo}/project11_simulation.git
