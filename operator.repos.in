@@ -1,4 +1,8 @@
 repositories:
+  ben_description:
+    type: git
+    url: ${git_repo}/ben_description.git
+    version: ${ros_version}
   camp:
     type: git
     url: ${git_repo}/camp.git
